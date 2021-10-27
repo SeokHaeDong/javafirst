@@ -15,7 +15,25 @@ public class DoWhile {
 			System.out.println("hani" + (i-2) + ".jpg");
 			i -= 1;
 		}while(i > 1);
-	
+		
+		System.out.println("============================");
+		
+		//5, 3, 1 출
+		// 1, 2, 3
+		// 5, 3, 1
+		int j = 1;
+		do {
+			System.out.println((-2*j)+7);
+			j += 1;
+		}while (j < 4);
+		
+		
+		System.out.println("============================");
+		
+		
+		int k = 1;
+		
+		
 	
 	}
 }
