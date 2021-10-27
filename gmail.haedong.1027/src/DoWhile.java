@@ -29,7 +29,7 @@ public class DoWhile {
 		
 		
 		System.out.println("============================");
-		
+		//문제가 뭔지 기억이 안
 		
 		int k = 1;
 		

@@ -4,6 +4,9 @@ public class If_4 {
 		long startTime_if = System.nanoTime();
 		long startTime_if1 = System.nanoTime();
 
+		//조건문이 한번 더 사용되는 것은 큰문제로 여겨지지 않지만 반복문의 경우는 한번 더 사용이 된다면 큰 문제로 여겨지게 된다 
+		//조건을 체크 하고 내려가야 하기 때문에 큰 차이는 없지만 그래도 조금 더 시간이 걸린다 
+	
 		int score = 89;
 		if (score >= 0 && score <= 100) {
 			if (score >= 90) {
