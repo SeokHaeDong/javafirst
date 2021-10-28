@@ -61,6 +61,8 @@ public class Toggle {
 			i += 1;
 		}
 
+		System.out.println("----------------------------------");
+
 	}
 
 }
