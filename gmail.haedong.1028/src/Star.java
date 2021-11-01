@@ -191,43 +191,37 @@ public class Star {
 			System.out.println("");
 		}
 
-		System.out.println("----------------------------------------------");
-
-		for (int i = 0; i < 5; i++) { // 별의 범위에서 양 끝에 속하는 열을 출력해야 하므로, 0부터 시작한다.
-			// 예를들어 n이 4일 경우 첫 번째 행은 4번 열에만 별이 찍히고,
-			// 두 번째 행은 4-1, 4+1 열에만 별이 찍히게 된다.
-			for (int j = 1; j < 2 * 5; j++) { // 열의 범위는 별 찍기-16과 동일하다.
-				if (j > 5 + i)
-					break; // 마지막 별을 찍었으면 반복문을 벗어난다.
-				if (i == 5 - 1) { // 마지막 행에 도착하면 모든 열에 별을 찍는다.
-					System.out.print("*");
-					continue;
-				}
-				if (j == 5 - i || j == 5 + i) { // 범위의 양 끝에 별을 찍는다.
-					System.out.print("*");
-				} else
-					System.out.print("-");
-			}
-			System.out.println();
-
-		}
 
 		System.out.println("----------------------------------------------");
 
 		// 마지막 부분은 따로 분리해서 출력하고 그 전에는 절반만 출력하면 나머지는 자
-		for (int i = 0; i < 5; i++) {
-
-			if (i == 4) {
-				for(int j = 0; j < 9; j++) {
+		for(int i = 0; i < 5; i++) {
+			if( i != 4) {
+				for(int j = 0; j < 5; j++) {
+					if(j == 4-i) {
+						System.out.print("*");
+					}else {
+						System.out.print("-");
+					}
+				}
+				
+				for(int j = 0; j < 4; j++) {
+					if(j == i - 1) {
+						System.out.print("*");
+					}else {
+						System.out.print("-");
+					}
+				}
+			} else {
+				for(int j = 0; j < 9; j++){
 					System.out.print("*");
 				}
-			} else if(i < 4){
-				for(int j = 0; j < 4 - i; j++) {}
-				System.out.print("-");
+				
 			}
 			
 			System.out.println("");
 		}
+		
 
 	}
 
