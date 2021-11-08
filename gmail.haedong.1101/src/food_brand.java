@@ -10,4 +10,5 @@ public class food_brand {
 	public int price;
 	
 	public static String type;
+
 }
