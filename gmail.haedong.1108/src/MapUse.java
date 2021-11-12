@@ -29,8 +29,8 @@ public class MapUse {
 		
 		
 		//데이터 삭제 
-//		map.remove("album");
-		map.put("album", null); //get으로 꺼내면 null이기 때문에 지운것으로 간주, 하지만 실질적으론 남아있음
+		map.remove("album");
+//		map.put("album", null); //get으로 꺼내면 null이기 때문에 지운것으로 간주, 하지만 실질적으론 남아있음
 		System.out.println(map);
 		
 		//전체 데이터 순회 - key의 이름을 기억하지 않아도 된다 

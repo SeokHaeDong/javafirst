@@ -11,6 +11,11 @@ public class StackQueueMain {
 		stack.push("push");
 		stack.push("test");
 		
+		for(String temp : stack) {
+			System.out.print(stack + " ");
+		}
+		
+		System.out.println("\n" + "============================");
 		
 		//데이터를 삭제하면서 꺼내기 
 		//더 이상 데이터가 없는데 pop을 하면 underflow 	발생
@@ -19,6 +24,10 @@ public class StackQueueMain {
 		name = stack.pop();
 		System.out.println(name);
 		
+		System.out.println("==========================================");
+		
+		System.out.println(stack.peek());
+		System.out.println(stack);
 		System.out.println("==========================================");
 		
 		//일반 큐는 ArrayList를 만들고 remove(0)을 하면 됨
@@ -31,6 +40,9 @@ public class StackQueueMain {
 		queue.offer("NEWZILAND");
 		queue.offer("HOLLAND");
 		queue.offer("MONGOLIA");
+		
+		System.out.println(queue);
+		
 		
 //		System.out.println(queue);
 		//우선순위가 가장 낮은 CHINA를 꺼내 온다.(삭제하면서 리턴)

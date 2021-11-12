@@ -16,6 +16,9 @@ public class DTOAndMap {
 		map.put("이름", "동");
 		map.put("나이", 25);
 		
+		map.put("이름", "해");
+		map.put("학년", 3);
+		
 		Set<String> keys = map.keySet();
 		for(String key : keys) {
 			System.out.println(key + " : " + map.get(key));

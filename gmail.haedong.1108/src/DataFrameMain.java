@@ -37,7 +37,7 @@ public class DataFrameMain {
 		dto.setName("웬디");
 		dto.setAge(27);
 		dto.setBrith("1995/10/25");
-		//마지막에 데이터 추가
+		//마지막에 데이터 추가 2번째 인덱스에 삽입하라
 		ar.add(2, dto);
 		
 		dto = new DTO();
@@ -73,7 +73,7 @@ public class DataFrameMain {
 		dto.setName("예리");
 		dto.setAge(22);
 		dto.setBrith("2000/07/28");
-		ar.set(4, dto);
+		ar.set(0, dto);
 		
 		
 		

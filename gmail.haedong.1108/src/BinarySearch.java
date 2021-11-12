@@ -13,7 +13,7 @@ public class BinarySearch {
 		}
 		
 		//int[] ar = {10,20,24,30,40,45,54,66,80,90};
-		System.out.println(Arrays.binarySearch(ar, 66));
+		System.out.println("\n" + Arrays.binarySearch(ar, 66));
 		
 		
 		

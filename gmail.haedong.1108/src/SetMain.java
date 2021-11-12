@@ -6,7 +6,7 @@ public class SetMain {
 		//TreeSet은 순차적으로 접근하면 데이터를 크리 순서대로 리턴
 		TreeSet<String> songs = new TreeSet<>();
 		songs.add("VVS");
-		songs.add("VVS");
+		songs.add("VVS"); //중복되어서 저장이 되지 않음 
 		songs.add("run!");
 		songs.add("~~~~1");
 		songs.add("~~~~2");

@@ -33,7 +33,7 @@ public class ListMain {
 		
 		end = System.nanoTime();
 		System.out.println("LinkedList 작업시간 : " + (end - start));
-		
+		System.out.println("======================================");
 		
 		start = System.nanoTime();
 		
