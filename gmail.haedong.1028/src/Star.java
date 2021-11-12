@@ -201,7 +201,7 @@ public class Star {
 					if(j == 4-i) {
 						System.out.print("*");
 					}else {
-						System.out.print("-");
+						System.out.print(" ");
 					}
 				}
 				
@@ -209,7 +209,7 @@ public class Star {
 					if(j == i - 1) {
 						System.out.print("*");
 					}else {
-						System.out.print("-");
+						System.out.print(" ");
 					}
 				}
 			} else {
