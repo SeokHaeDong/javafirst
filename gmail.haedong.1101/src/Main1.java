@@ -1,4 +1,3 @@
-//클래스와 인스턴스 만들기
 public class Main1 {
 
 	public static void main(String[] args) {
