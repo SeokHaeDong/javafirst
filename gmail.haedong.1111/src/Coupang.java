@@ -18,7 +18,7 @@ public class Coupang {
 			// br에 log.txt 파일을 연결해서 인스턴스를 생성해서 대입
 			// 파일을 현재 작업 디렉터리에 복사해서 수행
 			// 파일 위치르 다른곳에 두고 상대경로로 파일의 위치 찾아 줌
-			br = new BufferedReader(new InputStreamReader(new FileInputStream("../../Desktop/Java/java/1111/log.txt")));
+			br = new BufferedReader(new InputStreamReader(new FileInputStream("../../../Desktop/Java/Java/1111/log.txt")));
 
 			// 파일의 내용을 전부 읽어서 출력
 			String data = "";
@@ -26,6 +26,8 @@ public class Coupang {
 
 			// 접속한 IP(컴퓨터) 개수를쎄기 위한 Set 자료구조 생성
 			Set<String> ip_cnt = new HashSet<>();
+			
+			Map<String, Object> ip_traffic = new HashMap<>();
 			
 
 			long traffic_sum = 0;
@@ -51,6 +53,13 @@ public class Coupang {
 				// System.out.println(line_arr[0] + " : " + line_arr[9]);
 
 				ip_cnt.add(line_arr[0]);
+				
+				if(ip_traffic.containsKey(line_arr[0])) {
+					line_arr[9] += line_arr[9];
+				}
+					
+				ip_traffic.put(line_arr[0], line_arr[9]);
+				
 				
 				// 숫자로 변환되지 않는 데이터를 "0" 으로 치환
 				/*
@@ -78,12 +87,16 @@ public class Coupang {
 			// StringBuilder sb = new StringBuilder();
 
 			System.out.println("IP의 개수 : " + ip_cnt.size());
-			System.out.println(ip_cnt);
+			
+			ip_traffic.forEach((key, value)->{
+				System.out.println(key + " : " + value);
+			});
+			
 
 //			System.out.println("트래픽의 합계 : " + traffic_sum);
 
 		} catch (Exception e) {
-			System.out.println(e.getLocalizedMessage());
+			System.out.println("1:" + e.getLocalizedMessage());
 		} finally {
 			try {
 				br.close();
